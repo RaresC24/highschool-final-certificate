@@ -1,3 +1,4 @@
+<img width="1919" height="1047" alt="Screenshot 2024-05-08 135312" src="https://github.com/user-attachments/assets/bbe085fa-b462-4e57-b701-352676394d55" />
 # High School Final Certification Project: Movie Hub
 
 This repository contains my final project for the 12th-grade computer science certification (Atestat). The primary objective of this project was to demonstrate foundational proficiency in core web technologies: HTML, CSS, and basic JavaScript.
