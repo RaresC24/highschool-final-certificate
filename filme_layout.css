@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    display: grid;
+    grid-template-columns: auto 0px; 
+}
+
+.container{
+    background-color: black;
+    justify-content: center;
+    height: auto;
+}
+
+.bara{
+    width: 100vw;
+    height: 90px;
+    background-color: rgba(29, 29, 29, 0.584);
+    border-bottom: solid grey 1px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;
+}
+
+button{
+    background: transparent;
+    border: 0;
+    color: rgb(239, 236, 189);
+    text-align: bottom;
+    font-family: 'Muli', sans-serif;
+    font-size: 25px;
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0 10px;
+    padding-top: 50px;
+    cursor: pointer;
+    height: 90px;
+}
+
+button.active{
+   /* background: linear-gradient(transparent, transparent, transparent, transparent,  rgba(255, 188, 87, 0.625));*/
+    color: rgb(255, 188, 87);
+}
+
+#bara_sub{
+    height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+hr{
+    width: 83px;
+    height: 5px;
+    transform: translate3d(-55px, -11px, 0);
+    background-color: rgb(255, 174, 0);
+    transition: 0.2s ease-in;
+    border: 0;
+    border-radius: 50px;
+}
+
+hr.seriale{
+    width: 95px;
+    transform: translate3d(36px, -11px, 0);
+
+    color: orange;
+}
+
+
+.filme_seriale{
+    display: flex;
+    margin: auto;
+}
+
+.butoane{
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    height: 100%;
+    border: 0;
+    margin: 0 20px;
+    font-size: 35px;
+    align-items: center;
+    justify-content: center;
+}
+
+i{
+    margin-top: 45px;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(239, 236, 189);
+}
+
+a:hover{
+    color: rgb(255, 188, 87);
+}
+
+
+/*
+filme
+*/
+
+.lista_filme{
+    width: 1000px;
+    height: auto;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.info{
+    display: flex;
+    margin: 0;
+}
+
+/*--------------*/
+
+.info_plus{
+    margin: 10px auto;
+    color: rgb(239, 236, 189);
+    width: 700px;
+}
+
+.nume{
+    font-size: 24px;
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    align-items: baseline;
+}
+
+.nume p{
+    padding: 0;
+    padding-right: 23px;
+    margin: 0;
+    margin-left: 3px;
+}
+
+img{
+    height: 140px;
+    width: 100px;
+    margin: 20px;
+    margin-left: 45px;
+}
+
+li{
+    font-size: 15px;
+    color: rgb(149, 149, 149);
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+}
+
+/*------------*/
+
+.categorie{
+    margin: 10px 2px;
+    padding: 5px 10px;
+    display: inline-block;
+    border: solid 1px grey;
+    border-radius: 50px;
+}
+
+/*------------*/
+
+.durata{
+    padding: 0;
+    margin: 0;
+}
+
+.durata i{
+    padding: 0;
+    margin: 5px;
+    margin-left: 5px;
+}
+
+/*--------------*/
+
+.actori_regizor{
+    font-size: 15px;
+    color: rgb(149, 149, 149);
+    font-style: italic;
+    margin: 5px 0;
+    padding: 0;
+}
+
+/*--------------*/
+
+.imdb{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 180px;
+}
+
+.logo{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/6/69/IMDB_Logo_2016.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30px;
+    width: 65px;
+    border-radius: 5px;
+    margin: 10px 5px;
+    padding: 0;
+}
+
+strong{
+    height: 30px;
+    text-align: center;
+    margin: 15px 5px;
+    color: rgb(253, 244, 209);
+    font-size: 19px;
+}
+small{
+    color: grey;
+    font-size: 12px;
+}
+
+/*-------------*/
+
+.descriere{
+    position: absolute;
+    margin: 0;
+    padding: 20px;
+    width: 700px;
+    height: 160px;
+    text-align: justify;
+    opacity: 0;
+    color: rgb(253, 244, 209);
+    transition: 0.85s;
+    transform: translateX(-10px);
+}
+
+.descriere:hover{
+    opacity: 1;
+    background-color: rgba(17, 17, 17, 0.814);
+}
+
+p{
+    margin: 0;
+    padding: 0;
+}
+
+.fa-circle-play{
+    padding: 10px;
+    padding-left: 0;
+}
+
+.video{
+    font-size: 20px;
+}
+.video:hover{
+    text-decoration: underline;
+}
+
+.mai_mult{
+    color: rgb(253, 244, 209);
+    font-size: 15px;
+    font-style: italic;
+    padding-top: 90px;
+    transform: translateX(60px);
+    width: 71px;
+}
+
+.mai_mult a{
+    color: rgba(253, 244, 209, 0.669);
+}
+
+.mai_mult:hover a{
+    text-decoration: underline;
+    color: rgba(255, 188, 87, 0.783);
+}
+
+/*------------*/
+
+.o_linie{
+    display: flex;
+}
+
+.box{
+    background-color: rgba(17, 17, 17, 0.784);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1000px;
+    margin: 20px;
+    padding: 0;
+    border-bottom: solid rgb(57, 57, 57) 1px;
+    transform: translateX(400%);
+    transition: transform 0.5s ease;
+}
+
+.box:nth-last-of-type(even){
+    transform: translateX(-400%);
+}
+
+.box.show.activat{
+    transform: translateX(0);
+}
+
+.box2{
+    background-color: rgba(17, 17, 17, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1000px;
+    margin: 20px;
+    padding: 0;
+    border-bottom: solid rgb(57, 57, 57) 1px;
+    transform: translateX(-400%);
+    transition: transform 0.5s ease;
+    position: absolute;
+}
+
+.box2:nth-last-of-type(odd){
+    transform: translateX(400%);
+}
+
+.box2.show.activat{
+    transform: translateX(0);
+}
+
+
+
+/*-------------*/
+
+.top{
+    padding: 10px;
+    margin: 0;
+
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+
+    background: black;
+    border: solid 2px rgb(208, 87, 43);
+    border-radius: 20px;
+
+    
+    position: sticky;
+    bottom: 60px;
+    right: 100px; 
+
+    place-self: end;
+    white-space: nowrap;
+    margin-top: calc(100vh + 200px);
+}
+
+.top p{
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.top i{
+    padding: 0;
+    margin: 0;
+}

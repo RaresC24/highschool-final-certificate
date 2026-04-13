@@ -1,0 +1,33 @@
+h1{
+    color: rgb(255, 188, 87);
+    margin: 0;
+    padding: 0;
+    padding-top: 40px;
+    font-size: 35px;
+}
+
+small{
+    font-size: 15px;
+}
+
+.bara{
+    border-color: rgb(255, 188, 87);
+}
+
+.numar{
+    margin: 0;
+    padding: 0;
+    font-size: 20px;
+    color: rgb(248, 211, 161);
+    padding-right: 15px;
+    padding-left: 5px;
+}
+
+.acasa{
+    opacity: 0;
+    cursor: default;
+}
+
+.butoane.acasa{
+    cursor: default;
+}
